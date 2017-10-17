@@ -13,3 +13,5 @@ This makes the essence of a mixin function same as a class decorator.
 Could be equivalent to composited class decorators
 
 A decorator also gives the benefit of supplying metadata.
+
+- Introduce repositoryMixin
