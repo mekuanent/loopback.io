@@ -253,6 +253,8 @@ a component is not going to be written in a way to specially aware of the intera
 since component can use any JS/TS strategy, mixin doesn't seem like something special,
 or does it?
 
+If that's the case maybe I should add a tip to advise design a component in a way that its elements can be accessed by mixin functions? Or something like that?
+
 Opinions are welcomed :) Thanks!
 
 ## Configuring components
