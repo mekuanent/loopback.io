@@ -95,8 +95,8 @@ const request = require('request-promise-native');
 const weatherUrl =
   'http://samples.openweathermap.org/data/2.5/weather?appid=b1b15e88fa797225412429c1c50c122a1'
 
-export class CurrentTemperatureProvider implement Provider<number>{
-  async value():number {
+export class CurrentTemperatureProvider implements Provider<number>{
+  async value(): number {
     const data = await(request(`${weatherUrl}&q=Prague,CZ`, {json:true});
     return data.main.temp;
   }
@@ -113,12 +113,12 @@ In some cases, the provider may depend on other parts of LoopBack, for example t
 import {Provider} from '@loopback/context';
 const uuid = require('uuid/v4');
 
-class CorrelationIdProvider implement Provider<any>{
+class CorrelationIdProvider implements Provider<any>{
   constructor(@inject('http.request') request) {
     this.request = request;
   }
 
-  value():any {
+  value(): any {
     return this.request.headers['X-Correlation-Id'] || uuid();
   }
 }
