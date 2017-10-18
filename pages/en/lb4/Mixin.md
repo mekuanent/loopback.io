@@ -29,7 +29,7 @@ let newClass = MixinBuilder.mix(baseClass).with(FooMixin, BarMixin);
 ## Define Mixin
 
 By defining a mixin, you create a mixin function that takes in a base class, 
-and returns a new class extends the base class with new properties and methods mixed to it.
+and returns a new class extending the base class with new properties and methods mixed to it.
 
 For example you have a simple controller which only has a greeter function prints out 'hi!':
 

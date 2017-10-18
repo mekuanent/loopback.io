@@ -1,10 +1,10 @@
 ---
 lang: en
-title: 'Language Related Concepts'
+title: 'Language-related Concepts'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Lang-concepts.html
+permalink: /doc/en/lb4/Language-related-concepts.html
 summary:
 ---
 

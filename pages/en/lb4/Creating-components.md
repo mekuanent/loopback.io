@@ -232,9 +232,9 @@ export class AuthenticationProvider {
 
 ## Extends Application
 
-When bind a component to an app, you may want to mount the component's propertis 
+When binding a component to an app, you may want to mount the component's properties 
 and methods to application level context. 
-A stragety to do that is using mixin, which extends a class with new properties and methods.
+A strategy to do that is using mixin, which extends a class with new properties and methods.
 
 An example scenario would be an app has multiple components with repositories bound to each of them, 
 you can use a `RepositoryMixin` to mount all of the repositories to the app.

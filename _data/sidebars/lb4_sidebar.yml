@@ -98,8 +98,8 @@ children:
   url: Crafting-LoopBack-4.html
   output: 'web, pdf'
 
-- title: 'Language Related Concepts'
-  url: Lang-concepts.html
+- title: 'Language-related Concepts'
+  url: Language-related-concepts.html
   output: 'web, pdf'
   children:
 
