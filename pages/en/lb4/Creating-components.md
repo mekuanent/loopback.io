@@ -230,6 +230,31 @@ export class AuthenticationProvider {
 }
 ```
 
+## Extends Application
+
+When bind a component to an app, you may want to mount the component's propertis 
+and methods to application level context. 
+A stragety to do that is using mixin, which extends a class with new properties and methods.
+
+An example scenario would be an app has multiple components with repositories bound to each of them, 
+you can use a `RepositoryMixin` to mount all of the repositories to the app.
+
+If you are not familiar with concept `mixin`, check [Mixin](Mixin.htm) to know more, 
+it also introduces how to apply mixins by the shortcut function in LoopBack.
+
+From Janny:
+
+I am going to add a Lite version of `RepositoryMixin`'s code as the end of this section
+to explain how a mixin interacts with components, better avoid a heavy example for reader to learn.
+
+And the more I write the more I am confused what content is proper to be put here, 
+the reason is mixin is a JavaScript strategy, 
+a component is not going to be written in a way to specially aware of the interaction with it, 
+since component can use any JS/TS strategy, mixin doesn't seem like something special,
+or does it?
+
+Opinions are welcomed :) Thanks!
+
 ## Configuring components
 
 More often than not, the component may want to offer different value providers depending on the configuration. For example, a component providing Email API may offer different transports (stub, SMTP, etc.).
@@ -248,10 +273,3 @@ class EmailComponent {
   }
 }
 ```
-
-## Interact with Mixin
-
-TBD.
-
-- create a new concept Mixin
-- use `RepositoryMixin` as an example to show mount component repositories in a mixin
